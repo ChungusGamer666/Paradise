@@ -15,6 +15,8 @@
 	gendered_icon = 1
 	parent_organ = null
 	encased = "ribcage"
+	artery_name = "aorta"
+	arterial_bleeding_severity = 1
 	convertable_children = list(/obj/item/organ/external/groin)
 
 /obj/item/organ/external/chest/emp_act(severity)
@@ -39,6 +41,8 @@
 	vital = TRUE
 	parent_organ = "chest"
 	amputation_point = "lumbar"
+	artery_name = "iliac artery"
+	arterial_bleeding_severity = 1
 	gendered_icon = 1
 
 /obj/item/organ/external/arm
@@ -51,6 +55,8 @@
 	body_part = ARM_LEFT
 	parent_organ = "chest"
 	amputation_point = "left shoulder"
+	artery_name = "basilic vein"
+	arterial_bleeding_severity = 0.75
 	can_grasp = 1
 	convertable_children = list(/obj/item/organ/external/hand)
 
@@ -83,6 +89,8 @@
 	icon_position = LEFT
 	parent_organ = "groin"
 	amputation_point = "left hip"
+	artery_name = "femoral artery"
+	arterial_bleeding_severity = 0.75
 	can_stand = 1
 	convertable_children = list(/obj/item/organ/external/foot)
 
@@ -122,6 +130,8 @@
 	icon_position = LEFT
 	parent_organ = "l_leg"
 	amputation_point = "left ankle"
+	artery_name = "dorsalis pedis artery"
+	arterial_bleeding_severity = 0.5
 	can_stand = 1
 
 /obj/item/organ/external/foot/emp_act(severity)
@@ -163,6 +173,8 @@
 	body_part = HAND_LEFT
 	parent_organ = "l_arm"
 	amputation_point = "left wrist"
+	artery_name = "deep palmar arch"
+	arterial_bleeding_severity = 0.5
 	can_grasp = 1
 
 /obj/item/organ/external/hand/emp_act(severity)
@@ -206,6 +218,8 @@
 	amputation_point = "neck"
 	gendered_icon = 1
 	encased = "skull"
+	artery_name = "carotid"
+	arterial_bleeding_severity = 2
 	var/can_intake_reagents = 1
 	var/alt_head = "None"
 

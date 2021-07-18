@@ -57,7 +57,7 @@
 
 	var/artery_name = "artery"
 	var/arterial_bleeding = FALSE
-	var/arterial_bleeding_severity = 3
+	var/arterial_bleeding_severity = 1
 
 	var/amputation_point // Descriptive string used in amputation.
 	var/can_grasp

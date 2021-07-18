@@ -70,6 +70,7 @@
 			if(BP.arterial_bleeding && !bleedsuppress && !(HAS_TRAIT(src, TRAIT_FAKEDEATH) || src.stat >= DEAD))
 				if(world.time >= next_blood_squirt)
 					var/turf/sprayloc = get_turf(src)
+					next_blood_squirt = world.time + 10 SECONDS
 					blood_squirt(BP.arterial_bleeding_severity, sprayloc)
 					playsound(get_turf(src), 'sound/effects/artery.ogg', 75, 0)
 					visible_message("<span class='danger'>Blood squirts from [src]'s [BP.artery_name]</span>!", \
